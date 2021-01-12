@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="base1">#FF000000</color>
+    <color name="base2">#FFFAFAFA</color>
+    <color name="base3">#FFFFFFFF</color>
+
+    <color name="accent">#FF292929</color>
+    <color name="accent2">#FF1554F6</color>
+    <color name="access">#FF69B76C</color>
+    <color name="error">#FFFF4F4F</color>
+
+    <color name="shade10">#FFE5E5E5</color>
+    <color name="shade50">#FF808080</color>
+    <color name="shade60">#FF666666</color>
+    <color name="shade90">#FF1A1A1A</color>
+
+    <color name="statusBarColor">#33000000</color>
+</resources>

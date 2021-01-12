@@ -1,0 +1,49 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.NotForgot" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/base2</item>
+        <item name="colorPrimaryVariant">@color/statusBarColor</item>
+        <item name="colorOnPrimary">@color/base1</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorSecondaryVariant">@color/accent2</item>
+        <item name="colorOnSecondary">@color/base2</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/statusBarColor</item>
+        <!-- Customize your theme here. -->
+
+        <item name="backgroundColor">@color/base2</item>
+        <item name="colorOnBackground">@color/base1</item>
+        <item name="android:textColor">@color/base1</item>
+        <item name="android:navigationBarColor">@color/base1</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_back</item>
+
+        <item name="android:toolbarStyle">@style/AppToolbar</item>
+        <item name="materialButtonStyle">@style/Button</item>
+        <item name="materialAlertDialogTheme">@style/MaterialAlertDialogTheme</item>
+        <item name="alertDialogTheme">@style/AlertDialogTheme</item>
+        <item name="textInputStyle">@style/TextInputLayoutOutlined</item>
+        <item name="editTextStyle">@style/EditTextOutlined</item>
+        <item name="snackbarStyle">@style/Snack</item>
+    </style>
+
+    <style name="AppToolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">@color/base2</item>
+        <item name="titleTextAppearance">@style/ToolbarTextAppearance</item>
+    </style>
+
+    <style name="ToolbarTextAppearance" parent="Text.H3">
+        <item name="android:textColor">@color/base1</item>
+    </style>
+
+    <style name="Snack" parent="Widget.MaterialComponents.Snackbar">
+        <item name="snackbarTextViewStyle">@style/SnackTextStyle</item>
+    </style>
+
+    <style name="SnackTextStyle">
+        <item name="android:textAppearance">@style/Text.Body2</item>
+        <item name="android:textColor">@color/base2</item>
+    </style>
+</resources>

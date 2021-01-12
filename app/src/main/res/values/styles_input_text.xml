@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextInputLayoutOutlined" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="errorTextColor">@color/error</item>
+        <item name="hintTextAppearance">@style/Text.Caption</item>
+        <item name="hintTextColor">@color/accent2</item>
+        <item name="counterTextAppearance">@style/Text.Caption</item>
+        <item name="helperTextTextAppearance">@style/Text.Caption</item>
+        <item name="boxStrokeColor">@color/input_layout_border_color</item>
+        <item name="boxBackgroundColor">@color/base2</item>
+        <item name="materialThemeOverlay">@style/TextInputLayoutOutlinedOverlay</item>
+        <item name="shapeAppearance">@style/InputLayoutRoundedShapeAppearance</item>
+    </style>
+
+    <style name="InputLayoutRoundedShapeAppearance">
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="TextInputLayoutOutlinedOverlay">
+        <item name="editTextStyle">@style/EditTextOutlined</item>
+        <item name="autoCompleteTextViewStyle">@style/EditTextOutlined</item>
+        <item name="textAppearanceSubtitle1">@style/Text.Caption</item>
+    </style>
+
+    <style name="EditTextOutlined" parent="@style/Widget.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="android:textAppearance">@style/Text.Body1</item>
+        <item name="android:textCursorDrawable">@drawable/edit_text_cursor</item>
+    </style>
+
+    <style name="TextInputLayoutUnderlined" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="errorTextColor">@color/error</item>
+        <item name="hintTextAppearance">@style/Text.Caption</item>
+        <item name="hintTextColor">@color/accent2</item>
+        <item name="counterTextAppearance">@style/Text.Caption</item>
+        <item name="helperTextTextAppearance">@style/Text.Caption</item>
+        <item name="boxBackgroundColor">@color/base2</item>
+        <item name="boxStrokeColor">@color/accent2</item>
+        <item name="materialThemeOverlay">@style/TextInputLayoutUnderlinedOverlay</item>
+    </style>
+
+    <style name="TextInputLayoutUnderlinedOverlay">
+        <item name="editTextStyle">@style/EditTextUnderlined</item>
+        <item name="autoCompleteTextViewStyle">@style/EditTextUnderlined</item>
+    </style>
+
+    <style name="EditTextUnderlined" parent="@style/Widget.MaterialComponents.TextInputEditText.FilledBox">
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:textAppearance">@style/Text.Body1</item>
+        <item name="android:colorControlNormal">@color/base1</item>
+        <item name="android:colorControlActivated">@color/accent2</item>
+        <item name="android:textCursorDrawable">@drawable/edit_text_cursor</item>
+    </style>
+</resources>

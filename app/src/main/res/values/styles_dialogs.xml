@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MaterialAlertDialogTheme" parent="@style/ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="materialAlertDialogTitleTextStyle">@style/AppDialogTitleStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/MaterialDialogButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/MaterialDialogButton</item>
+        <item name="buttonBarNeutralButtonStyle">@style/MaterialDialogButton</item>
+    </style>
+
+    <style name="AppDialogTitleStyle" parent="@style/MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textAppearance">@style/Text.H4</item>
+    </style>
+
+    <style name="MaterialDialogButton" parent="@style/Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textAppearance">@style/Text.Body2</item>
+        <item name="android:textColor">@color/accent2</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="AlertDialogTheme" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="colorAccent">@color/accent2</item>
+        <item name="materialButtonStyle">@style/AlertButtonStyle</item>
+    </style>
+
+    <style name="AlertButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:textStyle">normal</item>
+    </style>
+</resources>
