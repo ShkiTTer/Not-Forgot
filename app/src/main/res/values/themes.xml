@@ -17,7 +17,7 @@
         <item name="colorOnBackground">@color/base1</item>
         <item name="android:textColor">@color/base1</item>
         <item name="android:navigationBarColor">@color/base1</item>
-        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightStatusBar">false</item>
         <item name="android:homeAsUpIndicator">@drawable/ic_back</item>
 
         <item name="android:toolbarStyle">@style/AppToolbar</item>
@@ -45,5 +45,9 @@
     <style name="SnackTextStyle">
         <item name="android:textAppearance">@style/Text.Body2</item>
         <item name="android:textColor">@color/base2</item>
+    </style>
+
+    <style name="Theme.NotForgot.Startup">
+        <item name="android:windowTranslucentStatus">true</item>
     </style>
 </resources>
