@@ -5,6 +5,8 @@ plugins {
     id 'kotlin-kapt'
 }
 
+
+
 android {
     compileSdkVersion rootProject.ext.compileSdk
 
@@ -12,7 +14,6 @@ android {
         minSdkVersion rootProject.ext.minSdk
         targetSdkVersion rootProject.ext.targetSdk
         versionCode 1
-        versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
