@@ -4,11 +4,6 @@ plugins {
     id 'kotlin-kapt'
 }
 
-def versionPropsFile = rootProject.file('version.properties')
-Properties versionProps = new Properties()
-versionProps.load(new FileInputStream(versionPropsFile))
-def verCode = versionProps['VERSION_CODE'].toInteger()
-
 android {
     compileSdkVersion rootProject.ext.compileSdk
 
@@ -16,8 +11,8 @@ android {
         applicationId "com.notforgot.app"
         minSdkVersion rootProject.ext.minSdk
         targetSdkVersion rootProject.ext.targetSdk
-        versionCode verCode
-        versionName "0.0.$verCode"
+        versionCode 1
+        versionName "1.0"
         buildConfigField("String", "API_URL", '"http://practice.mobile.kreosoft.ru/api/"')
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
