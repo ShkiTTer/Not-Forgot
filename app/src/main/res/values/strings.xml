@@ -3,4 +3,11 @@
 
     <!-- Startup -->
     <string name="startup_app_name">Not\nForgot</string>
+
+    <!-- Login  -->
+    <string name="login_title">Войти</string>
+    <string name="login_email_hint">example@example.com</string>
+    <string name="login_password_hint">Пароль</string>
+    <string name="login_button">Войти</string>
+    <string name="login_sign_up">Нет аккаунта? <link>Зарегистрироваться</link></string>
 </resources>

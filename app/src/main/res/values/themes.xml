@@ -21,6 +21,7 @@
         <item name="android:homeAsUpIndicator">@drawable/ic_back</item>
 
         <item name="android:toolbarStyle">@style/AppToolbar</item>
+        <item name="toolbarStyle">@style/AppToolbar</item>
         <item name="materialButtonStyle">@style/Button</item>
         <item name="materialAlertDialogTheme">@style/MaterialAlertDialogTheme</item>
         <item name="alertDialogTheme">@style/AlertDialogTheme</item>

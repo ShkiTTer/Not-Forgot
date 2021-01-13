@@ -8,6 +8,9 @@
         <item name="android:insetBottom">0dp</item>
         <item name="android:insetTop">0dp</item>
         <item name="android:textAppearance">@style/Text.Body2</item>
+        <item name="android:textColor">@color/base2</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="cornerRadius">8dp</item>
         <item name="backgroundTint">@color/bg_button_selector</item>
     </style>
 </resources>
