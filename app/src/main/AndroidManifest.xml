@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NotForgot">
-        <activity android:name=".presentation.startup.StartupActivity"
+        <activity android:name=".presentation.auth.AuthFlowActivity"></activity>
+        <activity
+            android:name=".presentation.startup.StartupActivity"
             android:theme="@style/Theme.NotForgot.Startup">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

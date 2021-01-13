@@ -1,17 +1,30 @@
 package com.notforgot.app.app.di
 
 import com.notforgot.app.BuildConfig
+import com.notforgot.data.db.common.AppDatabase
+import com.notforgot.data.db.common.Database
+import com.notforgot.data.db.session.SessionDataSourceImpl
 import com.notforgot.data.net.Network
+import com.notforgot.domain.session.*
 import kotlinx.serialization.ExperimentalSerializationApi
+import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.loadKoinModules
 import org.koin.dsl.module
 
 object KoinModules {
-    private val dataBaseModule = module { }
+    private val dataBaseModule = module {
+        single { Database.build(androidContext()) }
+        single { get<AppDatabase>().getSessionDao() }
+    }
 
-    private val dataSourceModule = module { }
+    private val dataSourceModule = module {
+        factory<SessionDataSource> { SessionDataSourceImpl(sessionDao = get()) }
+    }
 
-    private val useCaseModule = module { }
+    private val useCaseModule = module {
+        factory<GetCurrentSessionUseCase> { GetCurrentSessionUseCaseImpl(sessionDataSource = get()) }
+        factory<ClearSessionsUseCase> { ClearSessionUseCaseImpl(sessionDataSource = get()) }
+    }
 
     private val interactorModule = module { }
 
